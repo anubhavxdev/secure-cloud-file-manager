@@ -1,5 +1,58 @@
+# === Build Outputs ===
 target/
-.env
-*.log
+build/
+dist/
+*.jar
+*.war
+*.class
+
+# === IDE ===
 .idea/
 .vscode/
+*.iws
+*.iml
+*.ipr
+.project
+.classpath
+.settings/
+.factorypath
+.springBeans
+.sts4-cache
+.apt_generated
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# === Environment & Secrets ===
+.env
+*.env
+application-local.properties
+application-local.yml
+
+# === Logs ===
+*.log
+logs/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Maven Wrapper (keep scripts, ignore jar) ===
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# === Node (for React frontend) ===
+node_modules/
+.next/
+.cache/
+*.tsbuildinfo
+
+# === Misc ===
+*.swp
+*.swo
+*~
